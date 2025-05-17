@@ -1,9 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Tema base -->
     <style name="Base.Theme.MedSinal" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Personalizações do tema principal -->
+        <item name="colorPrimary">@color/fundo_app</item> <!-- Exemplo -->
     </style>
 
-    <style name="Theme.MedSinal" parent="Base.Theme.MedSinal" />
+    <!-- Tema para a Splash Screen -->
+    <style name="Theme.MedSinal.Splash" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/fundo_app</item> <!-- Para cor sólida -->
+    </style>
+
+    <!-- Tema principal do app (herda do base) -->
+    <style name="Theme.MedSinal" parent="Base.Theme.MedSinal">
+
+    </style>
 </resources>

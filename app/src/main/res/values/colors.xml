@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="cor_icone">#107859</color>
+    <!-- Adicione uma cor dedicada para o fundo -->
+    <color name="fundo_app">#F1E5CF</color>
+    <color name="fundo_app_dark">#F1E5CF</color> <!-- Versão escura -->
 </resources>
