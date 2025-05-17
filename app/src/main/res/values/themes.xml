@@ -2,16 +2,11 @@
     <!-- Tema base -->
     <style name="Base.Theme.MedSinal" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Personalizações do tema principal -->
-        <item name="colorPrimary">@color/fundo_app</item> <!-- Exemplo -->
-    </style>
-
-    <!-- Tema para a Splash Screen -->
-    <style name="Theme.MedSinal.Splash" parent="Theme.AppCompat.NoActionBar">
-        <item name="android:windowBackground">@color/fundo_app</item> <!-- Para cor sólida -->
+        <item name="colorPrimary">@color/fundo_app</item>
     </style>
 
     <!-- Tema principal do app (herda do base) -->
     <style name="Theme.MedSinal" parent="Base.Theme.MedSinal">
-
+        <item name="colorPrimary">@color/fundo_app</item>
     </style>
 </resources>
