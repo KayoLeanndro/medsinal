@@ -13,46 +13,92 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="164dp">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/background_image"
-                android:layout_width="416dp"
-                android:layout_height="168dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
                 android:scaleType="centerCrop"
                 android:src="@mipmap/icone_footerr"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                android:padding="-20dp"/>
 
             <ImageButton
                 android:id="@+id/icon_button"
-                android:layout_width="192dp"
-                android:layout_height="165dp"
+                android:layout_width="223dp"
+                android:layout_height="175dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 android:src="@mipmap/icone_ms_tela_principal_foreground"
                 app:layout_constraintBottom_toBottomOf="@id/background_image"
-                app:layout_constraintEnd_toEndOf="@id/background_image"
-                app:layout_constraintStart_toStartOf="@id/background_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/background_image" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <!-- Área principal de conteúdo -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="440dp"
+            android:background="@color/cor_icone"
+            android:gravity="center"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:layout_marginTop="-16dp">
 
-            <TextView
+
+            <!-- Container dos botões 1-3 (centralizado) -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:background="@color/cor_white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/botao_quadrado"
+                    android:backgroundTint="@null"
+                    android:text="Clique aqui"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="8dp"/>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/botao_quadrado"
+                    android:text="Clique aqui"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="8dp"/>
+
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/botao_quadrado"
+                    android:text="Clique aqui"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="8dp"/>
+            </LinearLayout>
+
+            <Space
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/irei_colocar_mais_conteudos_abaixo"
-                android:textSize="18sp" />
+                android:layout_height="50dp" />
 
+            <Button
+                android:id="@+id/buttonSobrenos"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/fundo_app"
+                android:textColor="@color/cor_icone"
+                android:layout_gravity="center"
+                android:text="Botão 4" />
         </LinearLayout>
-
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

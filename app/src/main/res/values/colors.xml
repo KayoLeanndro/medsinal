@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="cor_icone">#107859</color>
+    <color name="cor_white">#ffffff</color>
     <!-- Adicione uma cor dedicada para o fundo -->
     <color name="fundo_app">#F1E5CF</color>
-    <color name="fundo_app_dark">#F1E5CF</color> <!-- Versão escura -->
+    <color name="fundo_app_dark">#F1E5CF</color>
+    <color name="cor_icone">#FF107859</color> <!-- Verde principal (com alpha FF) -->
+    <color name="button_green_fixed">#FF107859</color> <!-- Cor fixa para botões -->
 </resources>

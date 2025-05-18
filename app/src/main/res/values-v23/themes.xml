@@ -1,13 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <style name="Base.Theme.MedSinal" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Configurações base -->
+        <!-- Configurações base para API 23+ -->
     </style>
 
     <style name="Theme.MedSinal" parent="Base.Theme.MedSinal">
-        <item name="android:windowBackground">@color/fundo_app</item>
-        <!-- Barra de status/navegação transparente -->
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">true</item>
+        <!-- Mantenha suas configurações existentes -->
+        <item name="materialButtonStyle">@style/GreenButton.Fixed</item>
+
+        <!-- Adicione condicional para API 27+ -->
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
     </style>
 </resources>
