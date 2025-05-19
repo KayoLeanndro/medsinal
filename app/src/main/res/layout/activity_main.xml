@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,8 +10,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1"> <!-- Define weightSum para distribuição proporcional -->
 
+        <!-- Cabeçalho com imagem -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -40,15 +43,14 @@
         <!-- Área principal de conteúdo -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="440dp"
+            android:layout_height="wrap_content"
             android:background="@color/cor_icone"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp"
             android:layout_marginTop="-16dp">
 
-
-            <!-- Container dos botões 1-3 (centralizado) -->
+            <!-- Botões 1-3 -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
@@ -76,14 +78,15 @@
                     android:textColor="@android:color/white"
                     android:layout_margin="8dp"/>
 
-
                 <Button
                     android:id="@+id/button3"
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:background="@drawable/botao_quadrado"
-                    android:text="Clique aqui"
                     android:textColor="@android:color/white"
+                    android:drawableTop="@mipmap/icone_busca_saude_foreground"
+                     android:drawablePadding="4dp"
+                    android:gravity="center"
                     android:layout_margin="8dp"/>
             </LinearLayout>
 
@@ -100,5 +103,13 @@
                 android:layout_gravity="center"
                 android:text="Botão 4" />
         </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:background="@mipmap/footer_completo_foreground" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
