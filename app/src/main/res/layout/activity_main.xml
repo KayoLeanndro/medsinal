@@ -19,14 +19,17 @@
             android:id="@+id/header"
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:background="@color/fundo_app"
             app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/fundo_app">
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleX="3.8"
+                android:scaleY="4.0"
+                android:src="@mipmap/icone_ms_tela_principal_foreground"
                 android:layout_centerInParent="true"
                 android:contentDescription="Logo do App"/>
         </RelativeLayout>
@@ -72,8 +75,8 @@
                         android:padding="8dp">
 
                         <Button
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
                             android:background="@drawable/btn_square_shape"
                             android:text="1"
                             android:textSize="20sp" />
@@ -81,7 +84,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="3dp"
                             android:gravity="center"
                             android:maxLines="3"
                             android:textStyle="bold"
@@ -101,8 +104,8 @@
                         android:padding="8dp">
 
                         <Button
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
                             android:background="@drawable/btn_square_shape"
                             android:text="2"
                             android:textSize="20sp" />
@@ -110,7 +113,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="3dp"
                             android:gravity="center"
                             android:maxLines="5"
                             android:textStyle="bold"
@@ -131,8 +134,8 @@
                         android:padding="8dp">
 
                         <Button
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
                             android:background="@drawable/btn_square_shape"
                             android:text="3"
                             android:textSize="20sp" />
@@ -141,7 +144,7 @@
                             android:layout_width="90dp"
                             android:layout_height="68dp"
                             android:gravity="center"
-                            android:layout_marginTop="4dp"
+                            android:layout_marginTop="-5dp"
                             android:maxLines="3"
                             android:text="@string/localizador_servicos_desc"
                             android:textAlignment="center"
@@ -167,9 +170,14 @@
             app:layout_constraintEnd_toEndOf="parent">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginBottom="16dp"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="1dp"
+                android:src="@mipmap/icone_ms_tela_principal_foreground"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:scaleX="3.8"
+                android:scaleY="4.0"
                 android:contentDescription="Logo da Empresa"/>
 
             <!-- Container para os textos lado a lado -->
