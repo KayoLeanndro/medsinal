@@ -1,0 +1,9 @@
+<!-- res/drawable/btn_saude_conecta.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/btn_square_shape"/>
+    <item
+        android:drawable="@drawable/botao_saude_conecta"
+        android:width="70dp"
+        android:height="70dp"
+        android:gravity="center"/>
+</layer-list>

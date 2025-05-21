@@ -77,8 +77,8 @@
                         <Button
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:background="@drawable/btn_square_shape"
-                            android:text="1"
+                            android:gravity="center"
+                            android:drawableTop="@drawable/botao_saude_conecta_drawable"
                             android:textSize="20sp" />
 
                         <TextView
@@ -107,7 +107,8 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:background="@drawable/btn_square_shape"
-                            android:text="2"
+                            android:gravity="center"
+                            android:drawableTop="@drawable/botao_consultoria_anonima_drawable"
                             android:textSize="20sp" />
 
                         <TextView
@@ -137,8 +138,10 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:background="@drawable/btn_square_shape"
-                            android:text="3"
-                            android:textSize="20sp" />
+                            android:gravity="center"
+                            android:drawableTop="@drawable/botao_busca_saude_drawable"
+                            android:textSize="20sp"
+                            android:onClick="abrirTelaBuscarSaude"/>
 
                         <TextView
                             android:layout_width="90dp"

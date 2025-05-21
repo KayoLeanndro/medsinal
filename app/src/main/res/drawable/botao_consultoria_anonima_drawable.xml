@@ -1,0 +1,9 @@
+<!-- res/drawable/btn_consultoria_anonima.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/btn_square_shape"/>
+    <item
+        android:drawable="@drawable/botao_consultoria_anonima"
+        android:width="70dp"
+        android:height="70dp"
+        android:gravity="center"/>
+</layer-list>
