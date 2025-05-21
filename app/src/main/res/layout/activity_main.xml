@@ -27,8 +27,8 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:scaleX="3.8"
-                android:scaleY="4.0"
+                android:scaleX="2.8"
+                android:scaleY="2.8"
                 android:src="@mipmap/icone_ms_tela_principal_foreground"
                 android:layout_centerInParent="true"
                 android:contentDescription="Logo do App"/>
@@ -68,7 +68,7 @@
                     <!-- BOTÃO 1 -->
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="160dp"
+                        android:layout_height="182dp"
                         android:layout_weight="1"
                         android:gravity="center_horizontal"
                         android:orientation="vertical"
@@ -77,27 +77,26 @@
                         <Button
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:gravity="center"
                             android:drawableTop="@drawable/botao_saude_conecta_drawable"
-                            android:textSize="20sp" />
+                            android:gravity="center"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
+                            android:layout_marginTop="1dp"
                             android:gravity="center"
                             android:maxLines="3"
-                            android:textStyle="bold"
                             android:text="@string/biblioteca_digital_desc"
                             android:textAlignment="center"
                             android:textColor="@color/black"
-                            android:textSize="13sp" />
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                     <!-- BOTÃO 2 -->
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="160dp"
+                        android:layout_height="182dp"
                         android:layout_weight="1"
                         android:gravity="center_horizontal"
                         android:orientation="vertical"
@@ -107,28 +106,27 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:background="@drawable/btn_square_shape"
-                            android:gravity="center"
                             android:drawableTop="@drawable/botao_consultoria_anonima_drawable"
-                            android:textSize="20sp" />
+                            android:gravity="center" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
+                            android:layout_marginTop="1dp"
                             android:gravity="center"
                             android:maxLines="5"
-                            android:textStyle="bold"
                             android:text="@string/taci_desc"
-                            android:textColor="@color/black"
                             android:textAlignment="center"
-                            android:textSize="13sp" />
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                     <!-- BOTÃO 3 -->
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="161dp"
+                        android:layout_height="182dp"
                         android:layout_weight="1"
                         android:gravity="center_horizontal"
                         android:orientation="vertical"
@@ -138,16 +136,15 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:background="@drawable/btn_square_shape"
-                            android:gravity="center"
                             android:drawableTop="@drawable/botao_busca_saude_drawable"
-                            android:textSize="20sp"
-                            android:onClick="abrirTelaBuscarSaude"/>
+                            android:gravity="center"
+                            android:onClick="abrirTelaBuscarSaude" />
 
                         <TextView
-                            android:layout_width="90dp"
-                            android:layout_height="68dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
                             android:gravity="center"
-                            android:layout_marginTop="-5dp"
                             android:maxLines="3"
                             android:text="@string/localizador_servicos_desc"
                             android:textAlignment="center"
@@ -157,6 +154,7 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+
         </androidx.cardview.widget.CardView>
 
 
@@ -217,6 +215,23 @@
                     android:textSize="12sp"/>
             </LinearLayout>
         </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_quem_somos"
+            android:layout_width="277dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/fundo_app"
+            android:text="Quem Somos"
+            android:textColor="@color/cor_icone"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@id/footer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_content" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
