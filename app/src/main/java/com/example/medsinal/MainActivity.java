@@ -15,15 +15,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
     }
 
     public void abrirTelaBuscarSaude(View view){
-        Intent intent = new Intent(this, FirstFragment.class);
+        // Cria uma Intent para iniciar a BuscaSaudeActivity
+        Intent intent = new Intent(this, BuscaSaudeActivity.class);
         startActivity(intent);
+
+        // Adiciona animação de transição
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
     @Override
