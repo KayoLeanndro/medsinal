@@ -1,0 +1,7 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/icone_busca_saude_logo"
+        android:width="120dp"
+        android:height="120dp"
+        android:gravity="center"/>
+</layer-list>

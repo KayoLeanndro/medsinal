@@ -1,0 +1,7 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/icone_header_verde_busc_saude"
+        android:width="140dp"
+        android:height="140dp"
+        android:gravity="center"/>
+</layer-list>

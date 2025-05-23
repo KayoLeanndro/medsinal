@@ -177,8 +177,8 @@
                 android:src="@mipmap/icone_ms_tela_principal_foreground"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
-                android:scaleX="3.8"
-                android:scaleY="4.0"
+                android:scaleX="3.0"
+                android:scaleY="3.0"
                 android:contentDescription="Logo da Empresa"/>
 
             <!-- Container para os textos lado a lado -->

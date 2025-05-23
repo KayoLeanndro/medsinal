@@ -7,181 +7,187 @@
     android:orientation="vertical"
     android:background="@android:color/white">
 
-    <!-- HEADER (ocupa 30% da tela) -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="3"
-        android:background="#4CAF50">
-
-        <!-- Botão de voltar (esquerda superior) -->
-        <ImageButton
-            android:id="@+id/btnBack"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@android:drawable/ic_menu_revert"
-            android:contentDescription="Voltar"
-            app:tint="@android:color/white" />
-
-        <!-- Logo (direita superior) -->
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="8dp"
-            android:src="@mipmap/icone_ms_tela_principal_foreground"
-            android:contentDescription="Logo"/>
-
-        <!-- Símbolo decorativo (esquerda descendo) -->
-        <ImageView
-            android:id="@+id/decorativeSymbol"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_alignParentStart="true"
-            android:layout_below="@id/btnBack"
-            android:layout_marginStart="-30dp"
-            android:layout_marginTop="20dp"
-            android:src="@android:drawable/star_big_on"
-            android:contentDescription="Símbolo decorativo"
-            app:tint="#80FFFFFF" />
-    </RelativeLayout>
-
-    <!-- CONTEÚDO PRINCIPAL (com rolagem) -->
+    <!-- ScrollView principal -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="7"
-        android:fillViewport="true">
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp">
+            android:orientation="vertical">
 
-            <!-- Textos com ícone -->
+            <!-- Conteúdo Principal -->
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginBottom="30dp">
+                android:layout_height="228dp"
+                android:background="@color/fundo_app"
+                android:paddingBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Voltar"
+                    android:src="@android:drawable/ic_menu_revert"
+                    app:tint="@color/cor_icone" />
+
+                <ImageView
+                    android:id="@+id/decorativeSymbol"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnBack"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="30dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/icone_header_busc_saude" />
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/btnBack"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitEnd"
+                    android:contentDescription="Logo"
+                    android:src="@drawable/icone_busca_saude_logo" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="20dp">
+
+                <!-- Texto "Perto de você" -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/sideIcon"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Encontre"
+                            android:textColor="#4CAF50"
+                            android:textSize="33sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="POSTOS DE TESTAGEM"
+                            android:textColor="#F44336"
+                            android:textSize="33sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Perto de você!"
+                            android:textColor="#4CAF50"
+                            android:textSize="33sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/sideIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="76dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Ícone"
+                        android:scaleX="2.3"
+                        android:scaleY="2.3"
+                        android:src="@mipmap/icone_ms_tela_principal_foreground" />
+                </RelativeLayout>
+
+                <!-- Mapa - Espaçamento reduzido -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="8dp">
+
+                    <fragment
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- Footer -->
+            <LinearLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/fundo_app"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="8dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="Logo da Empresa"
+                    android:scaleType="fitCenter"
+                    android:scaleX="3.0"
+                    android:scaleY="3.0"
+                    android:src="@mipmap/icone_ms_tela_principal_foreground" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_centerVertical="true"
-                    android:layout_toStartOf="@+id/sideIcon">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Encontre"
-                        android:textColor="#4CAF50"
-                    android:textSize="36sp"
-                    android:textStyle="bold"/>
+                        android:layout_marginEnd="8dp"
+                        android:text="MED.SINAL"
+                        android:textColor="@color/cor_icone"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="POSTOS DE TESTAGEM"
-                        android:textColor="#F44336"
-                    android:textSize="36sp"
-                    android:textStyle="bold"/>
+                        android:layout_marginEnd="8dp"
+                        android:text="|"
+                        android:textColor="@color/cor_icone"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Perto de você"
-                        android:textColor="#4CAF50"
-                    android:textSize="36sp"
-                    android:textStyle="bold"/>
+                        android:text="MEDSINAL.PE@GMAIL.COM"
+                        android:textColor="@color/cor_icone"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
-
-                <!-- Ícone lateral -->
-                <ImageView
-                    android:id="@+id/sideIcon"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:src="@android:drawable/ic_menu_compass"
-                    android:contentDescription="Ícone"
-                    app:tint="#4CAF50" />
-            </RelativeLayout>
-
-            <!-- Mapa (substitua pelo seu MapView real) -->
-            <FrameLayout
-                android:id="@+id/mapContainer"
-                android:layout_width="match_parent"
-                android:layout_height="500dp"
-                android:background="#E0E0E0">
-
-                <!-- Placeholder do mapa -->
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@android:drawable/ic_menu_mapmode"
-                    android:scaleType="centerCrop"
-                    android:contentDescription="Mapa"/>
-            </FrameLayout>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
-    <!-- FOOTER (igual ao seu exemplo) -->
-    <LinearLayout
-        android:id="@+id/footer"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:background="#3F51B5"
-    android:orientation="vertical"
-    android:gravity="center">
-
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="80dp"
-        android:layout_marginBottom="1dp"
-        android:src="@mipmap/icone_ms_tela_principal_foreground"
-        android:scaleType="fitCenter"
-        android:adjustViewBounds="true"
-        android:contentDescription="Logo da Empresa"/>
-
-    <!-- Textos lado a lado -->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="MED.SINAL"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
-            android:layout_marginEnd="8dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="|"
-            android:textStyle="bold"
-            android:textSize="12sp"
-            android:textColor="@android:color/white"
-            android:layout_marginEnd="8dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="MEDSINAL.PE@GMAIL.COM"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
-            android:textSize="12sp"/>
-    </LinearLayout>
 </LinearLayout>
-    </LinearLayout>
