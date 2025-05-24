@@ -9,6 +9,7 @@
 
     <!-- ScrollView principal -->
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
@@ -20,22 +21,21 @@
             android:orientation="vertical">
 
             <!-- Conteúdo Principal -->
+
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="228dp"
-                android:background="@color/fundo_app"
-                android:paddingBottom="8dp">
+                android:layout_height="240dp"
+                android:background="@color/fundo_app">
 
                 <ImageButton
                     android:id="@+id/btnBack"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="12dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:contentDescription="Voltar"
-                    android:src="@android:drawable/ic_menu_revert"
-                    app:tint="@color/cor_icone" />
+                    android:src="@drawable/voltar_branco"/>
 
                 <ImageView
                     android:id="@+id/decorativeSymbol"
@@ -55,11 +55,10 @@
                     android:layout_height="150dp"
                     android:layout_below="@id/btnBack"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginEnd="16dp"
                     android:adjustViewBounds="true"
-                    android:scaleType="fitEnd"
                     android:contentDescription="Logo"
+                    android:paddingTop="-10dp"
+                    android:scaleType="fitStart"
                     android:src="@drawable/icone_busca_saude_logo" />
             </RelativeLayout>
 
@@ -124,7 +123,9 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="400dp"
-                    android:layout_marginTop="8dp">
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="30dp">
+
 
                     <fragment
                         android:id="@+id/map"
