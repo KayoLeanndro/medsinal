@@ -21,11 +21,10 @@
             android:orientation="vertical">
 
             <!-- Conteúdo Principal -->
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="240dp"
-                android:background="@color/fundo_app">
+                android:background="@color/cor_busca_saude">
 
                 <ImageButton
                     android:id="@+id/btnBack"
@@ -140,7 +139,7 @@
                 android:id="@+id/footer"
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:background="@color/fundo_app"
+                android:background="@drawable/imagem_header_footer"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="16dp">

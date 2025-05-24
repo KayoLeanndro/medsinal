@@ -25,6 +25,13 @@
             app:layout_constraintEnd_toEndOf="parent">
 
             <ImageView
+                android:id="@+id/header_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/imagem_header_footer"/>
+
+            <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:scaleX="2.8"
@@ -240,12 +247,13 @@
             android:id="@+id/footer"
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:background="@color/fundo_app"
+            android:background="@drawable/imagem_header_footer"
             android:orientation="vertical"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
+
 
             <ImageView
                 android:layout_width="150dp"

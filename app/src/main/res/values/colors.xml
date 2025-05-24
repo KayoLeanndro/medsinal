@@ -7,4 +7,5 @@
     <color name="fundo_app_dark">#F1E5CF</color>
     <color name="cor_icone">#FF107859</color> <!-- Verde principal (com alpha FF) -->
     <color name="button_green_fixed">#FF107859</color> <!-- Cor fixa para botões -->
+    <color name="cor_busca_saude">#FFE6B3</color>
 </resources>
