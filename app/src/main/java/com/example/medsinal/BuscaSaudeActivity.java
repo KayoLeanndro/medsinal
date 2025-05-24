@@ -79,7 +79,7 @@ public class BuscaSaudeActivity extends AppCompatActivity implements OnMapReadyC
         LatLng centroRecife = new LatLng(-8.061895, -34.871684);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(centroRecife, 14f));
     }
-
+    //Carrega o json com as unidades de saúde
     private void loadHealthUnitsFromJson() {
         try {
             InputStream is = getAssets().open("health_units.json");
