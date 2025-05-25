@@ -52,6 +52,12 @@ public class MainActivity extends AppCompatActivity {
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
+    public void abrirTelaSaudeConectada(View view) {
+        Intent intent = new Intent(this, SaudeConectadaActivity.class);
+        startActivity(intent);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+    }
+
     // Para navegação reversa com suporte ao botão "voltar"
     @Override
     public boolean onSupportNavigateUp() {

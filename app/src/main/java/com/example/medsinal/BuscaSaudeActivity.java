@@ -119,8 +119,11 @@ public class BuscaSaudeActivity extends AppCompatActivity implements OnMapReadyC
     }
 
     private void centerCamera() {
-        LatLng recife = new LatLng(-8.061895, -34.871684);
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(recife, 14f));
+        if (!healthUnits.isEmpty()) {
+            LatLng pos = new LatLng(healthUnits.get(0).getLatitude(), healthUnits.get(0).getLongitude());
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(pos, 14f));
+        }
+
     }
 
     @Override

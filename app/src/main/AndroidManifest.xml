@@ -32,6 +32,10 @@
         <activity
             android:name=".BuscaSaudeActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".SaudeConectadaActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

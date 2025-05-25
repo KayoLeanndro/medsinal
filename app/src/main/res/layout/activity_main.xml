@@ -84,7 +84,8 @@
                             android:layout_height="85dp"
                             android:background="@drawable/btn_square_shape"
                             android:drawableTop="@drawable/botao_saude_conecta_drawable"
-                            android:gravity="center"/>
+                            android:gravity="center"
+                            android:onClick="abrirTelaSaudeConectada"/>
 
                         <TextView
                             android:layout_width="match_parent"
