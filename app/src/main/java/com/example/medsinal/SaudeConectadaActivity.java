@@ -1,6 +1,7 @@
 package com.example.medsinal;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -44,6 +45,11 @@ public class SaudeConectadaActivity extends AppCompatActivity {
         if (getSupportActionBar() != null)
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        binding.btnBack.setOnClickListener(v -> {
+            Intent intent = new Intent(SaudeConectadaActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        });
     }
     @Override
     public boolean onSupportNavigateUp() {

@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <stroke
+                android:width="2dp"
+                android:color="#FF0000"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+
+    <item
+        android:drawable="@drawable/header_hiv_aids"
+        android:width="410dp"
+        android:height="300dp"
+        android:gravity="center"/>
+
+</layer-list>
