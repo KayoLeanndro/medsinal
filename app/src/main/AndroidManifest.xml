@@ -36,6 +36,31 @@
         <activity
             android:name=".SaudeConectadaActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".ActivityHivAids"
+            android:exported="false" />
+
+        <activity
+            android:name=".ActivitySifilis"
+            android:exported="false" />
+
+        <activity
+            android:name=".ActivityHerpes"
+            android:exported="false" />
+
+        <activity
+            android:name=".ActivityGonorreia"
+            android:exported="false" />
+
+        <activity
+            android:name=".ActivityHpv"
+            android:exported="false" />
+
+        <activity
+            android:name=".ActivityHepatite"
+            android:exported="false" />
+
     </application>
 
 </manifest>
