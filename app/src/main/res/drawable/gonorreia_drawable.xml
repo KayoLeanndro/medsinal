@@ -11,8 +11,8 @@
     </item>
 
     <item
-        android:drawable="@drawable/header_sifilis"
-        android:width="450dp"
+        android:drawable="@drawable/header_gonorreia"
+        android:width="410dp"
         android:height="300dp"
         android:gravity="center"/>
 

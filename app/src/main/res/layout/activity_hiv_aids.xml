@@ -27,7 +27,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="268dp"
-                android:background="@drawable/sifilis_drawable">
+                android:background="@drawable/hiv_aids_drawable">
 
                 <ImageButton
                     android:id="@+id/btnBack"
@@ -38,115 +38,100 @@
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:contentDescription="Voltar"
                     android:src="@drawable/voltar_branco" />
-
             </RelativeLayout>
 
-            <?xml version="1.0" encoding="utf-8"?>
-            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            <!-- CONTEÚDO INFORMATIVO -->
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fillViewport="true"
-                android:background="#FFFFFF">
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
 
-                <LinearLayout
+                <!-- Descrição -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descrição:"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
+                    android:text="O HIV é o vírus que ataca o sistema imunológico. Se não tratado, pode evoluir para a AIDS, estágio em que o corpo fica vulnerável a infecções graves. Hoje, o HIV tem tratamento e pode ser controlado com medicamentos."
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="16dp" />
 
-                    <!-- Conteúdo informativo -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:paddingTop="24dp"
-                        android:paddingBottom="24dp">
+                <!-- Formas de Transmissão -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Formas de Transmissão:"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
 
-                        <!-- Descrição -->
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Descrição:"
-                            android:textColor="@android:color/holo_red_dark"
-                            android:textStyle="bold"
-                            android:textSize="16sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Sexo sem camisinha (oral, vaginal ou anal).\n\n• Compartilhamento de seringas ou agulhas.\n\n• De mãe para filho na gravidez, parto ou amamentação.\n\n• Transfusão de sangue contaminado (raro atualmente).\n\nNão pega por abraço, beijo, uso de copos, toalhas, etc."
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="16dp" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="O HIV é o vírus que ataca o sistema imunológico. Se não tratado, pode evoluir para a AIDS, estágio em que o corpo fica vulnerável a infecções graves. Hoje, o HIV tem tratamento e pode ser controlado com medicamentos."
-                            android:textSize="14sp"
-                            android:layout_marginBottom="16dp" />
+                <!-- Sintomas -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sintomas:"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
 
-                        <!-- Formas de Transmissão -->
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Formas de Transmissão:"
-                            android:textColor="@android:color/holo_red_dark"
-                            android:textStyle="bold"
-                            android:textSize="16sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Fase inicial: febre, cansaço, dor de cabeça, ínguas.\n\n• Pode ficar anos sem sintomas.\n\n• Sem tratamento, evolui para AIDS: perda de peso, infecções, febre, cansaço extremo."
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="16dp" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="• Sexo sem camisinha (oral, vaginal ou anal).\n• Compartilhamento de seringas ou agulhas.\n• De mãe para filho na gravidez, parto ou amamentação.\n• Transfusão de sangue contaminado (raro atualmente).\n\nNão pega por abraço, beijo, uso de copos, toalhas, etc."
-                            android:textSize="14sp"
-                            android:layout_marginBottom="16dp" />
+                <!-- Prevenção -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prevenção:"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
 
-                        <!-- Sintomas -->
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Sintomas:"
-                            android:textColor="@android:color/holo_red_dark"
-                            android:textStyle="bold"
-                            android:textSize="16sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Uso de camisinha.\n\n• PrEP: medicamento diário para quem está em risco.\n\n• PEP: tratamento de emergência até 72h após exposição.\n\n• Testagem regular."
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="16dp" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="• Fase inicial: febre, cansaço, dor de cabeça, ínguas.\n• Pode ficar anos sem sintomas.\n• Sem tratamento, evolui para AIDS: perda de peso, infecções, febre, cansaço extremo."
-                            android:textSize="14sp"
-                            android:layout_marginBottom="16dp" />
+                <!-- Tratamento -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tratamento:"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
 
-                        <!-- Prevenção -->
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Prevenção:"
-                            android:textColor="@android:color/holo_red_dark"
-                            android:textStyle="bold"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="• Uso de camisinha.\n• PrEP: medicamento diário para quem está em risco.\n• PEP: tratamento de emergência até 72h após exposição.\n• Testagem regular."
-                            android:textSize="14sp"
-                            android:layout_marginBottom="16dp" />
-
-                        <!-- Tratamento -->
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Tratamento:"
-                            android:textColor="@android:color/holo_red_dark"
-                            android:textStyle="bold"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="O HIV não tem cura, mas o tratamento com antirretrovirais permite viver bem e sem transmitir o vírus (quando a carga viral está indetectável)."
-                            android:textSize="14sp"
-                            android:layout_marginBottom="16dp" />
-                    </LinearLayout>
-                </LinearLayout>
-            </ScrollView>
-
-
-            <!-- TÍTULO -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="O HIV não tem cura, mas o tratamento com antirretrovirais permite viver bem e sem transmitir o vírus (quando a carga viral está indetectável)."
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="16dp" />
+            </LinearLayout>
 
             <!-- GRID DE BOTÕES -->
             <GridLayout
@@ -161,12 +146,12 @@
                 android:paddingHorizontal="16dp"
                 android:useDefaultMargins="true">
 
-                <!-- Botões aqui (mantidos como no seu original) -->
+                <!-- Adicione os botões aqui -->
             </GridLayout>
         </LinearLayout>
     </ScrollView>
 
-    <!-- FOOTER FIXO NA PARTE INFERIOR -->
+    <!-- FOOTER FIXO -->
     <LinearLayout
         android:id="@+id/footer"
         android:layout_width="match_parent"

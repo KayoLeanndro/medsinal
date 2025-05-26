@@ -1,36 +1,11 @@
 package com.example.medsinal;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.ScrollView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.medsinal.databinding.ActivityBuscaSaudeBinding;
 import com.example.medsinal.databinding.ActivitySaudeConectaBinding;
-import com.example.medsinal.model.HealthUnit;
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.UiSettings;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 
 public class SaudeConectadaActivity extends AppCompatActivity {
     private ActivitySaudeConectaBinding binding;
@@ -50,7 +25,38 @@ public class SaudeConectadaActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
+
+        binding.btn1.setOnClickListener(view -> {
+            Intent intent = new Intent(this, ActivityHivAids.class);
+            startActivity(intent);
+        });
+
+        binding.btn2.setOnClickListener(view -> {
+            Intent intent = new Intent(this, ActivitySifilis.class);
+            startActivity(intent);
+        });
+
+        binding.btn3.setOnClickListener(view -> {
+            Intent intent = new Intent(this, ActivityHerpes.class);
+            startActivity(intent);
+        });
+
+        binding.btn4.setOnClickListener(view -> {
+            Intent intent = new Intent(this, ActivityGonorreia.class);
+            startActivity(intent);
+        });
+
+        binding.btn5.setOnClickListener(view -> {
+            Intent intent = new Intent(this, ActivityHpv.class);
+            startActivity(intent);
+        });
+
+        binding.btn6.setOnClickListener(view -> {
+            Intent intent = new Intent(this, ActivityHepatite.class);
+            startActivity(intent);
+        });
     }
+
     @Override
     public boolean onSupportNavigateUp() {
         finish();

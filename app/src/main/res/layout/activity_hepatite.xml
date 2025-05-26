@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_busca_saude"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".BuscaSaudeActivity">
+
+    <!-- ScrollView com conteúdo rolável -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- HEADER -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="268dp"
+                android:background="@drawable/header_hepatite">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Voltar"
+                    android:src="@drawable/voltar_branco" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Conteúdo informativo -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="24dp"
+                    android:paddingBottom="24dp">
+
+                    <!-- Descrição -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descrição:"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="As hepatites B e C são infecções causadas por vírus que atacam o fígado. Muitas vezes não apresentam sintomas, mas podem causar danos graves, como cirrose e câncer hepático, se não forem diagnosticadas e tratadas a tempo.\n\n•Hepatite B é considerada uma IST\n\n•Hepatite C não tem vacina, mas tem cura."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Formas de Transmissão -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Formas de Transmissão:"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Hepatite B:\n\n   • Relações sexuais sem camisinha.\n \n   • Compartilhamento de seringas, agulhas e objetos \n     cortantes.\n\n   • De mãe para filho no parto.\n\n   • Procedimentos com materiais não esterilizados \n    (tatuagens, piercings, etc.).\n\n • Hepatite C:\n\n   • Contato com sangue contaminado. \n\n   • Contato com sangue contaminado. \n\n   • Transfusão de sangue antes de 1993.  \n\n  •  Uso de objetos não esterilizados."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Sintomas -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sintomas:"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Cansaço.\n\n• Náusea e dor abdominal\n\n •Urina escura\n\n • Icterícia (pele e olhos amarelados)\n\n • Febre e mal-estar.\n\n • Mas atenção: na maioria dos casos, a pessoa não sente nada por muitos anos."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Prevenção -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prevenção:"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Para os dois tipos:\n\n     • Não compartilhar seringas, agulhas ou \n       cortantes.\n\n     • Garantir que instrumentos em salões,\n       estúdios de tatuagem e consultórios  \n       sejam esterilizados.\n\n     • Usar Camisinha\n\n• Hepatite B: \n\n     • Existe vacina gratuita no SUS (3 doses).\n\n• Hepatite C: \n\n     • Não tem vacina. Por isso, a testagem \n       é essencial. "
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Tratamento -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tratamento:"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="\n Hepatite B:\n   • Tem controle com antivirais. \n\n   • Pode não precisar de remédio, \n     dependendo do caso.\n\n Hepatite C:\n   • Tem cura com medicamentos modernos \n     (antivirais de ação direta). \n\n   •Tratamento gratuito pelo SUS."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FOOTER FIXO NA PARTE INFERIOR -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/imagem_header_footer"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="4dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="Logo da Empresa"
+            android:scaleType="fitCenter"
+            android:scaleX="2.0"
+            android:scaleY="2.0"
+            android:src="@mipmap/icone_ms_tela_principal_foreground" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="MED.SINAL"
+                android:textColor="@color/cor_icone"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="|"
+                android:textColor="@color/cor_icone"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MEDSINAL.PE@GMAIL.COM"
+                android:textColor="@color/cor_icone"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

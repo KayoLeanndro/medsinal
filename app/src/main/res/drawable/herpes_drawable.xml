@@ -11,7 +11,7 @@
     </item>
 
     <item
-        android:drawable="@drawable/header_sifilis"
+        android:drawable="@drawable/header_herpes"
         android:width="450dp"
         android:height="300dp"
         android:gravity="center"/>

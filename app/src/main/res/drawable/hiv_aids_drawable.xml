@@ -12,7 +12,7 @@
 
     <item
         android:drawable="@drawable/header_hiv_aids"
-        android:width="410dp"
+        android:width="450dp"
         android:height="300dp"
         android:gravity="center"/>
 
