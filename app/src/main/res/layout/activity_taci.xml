@@ -7,7 +7,6 @@
     android:orientation="vertical"
     android:background="@android:color/white">
 
-    <!-- ScrollView principal -->
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
@@ -18,121 +17,136 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@color/cor_icone">
 
-            <!-- Conteúdo Principal -->
+            <!-- Cabeçalho com imagem -->
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="240dp"
-                android:background="@color/cor_busca_saude">
+                android:layout_height="266dp"
+                android:background="@drawable/taci_assistente_virtual">
 
                 <ImageButton
                     android:id="@+id/btnBack"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="12dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:contentDescription="Voltar"
                     android:src="@drawable/voltar_branco" />
-
-                <ImageView
-                    android:id="@+id/decorativeSymbol"
-                    android:layout_width="176dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/btnBack"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="30dp"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitStart"
-                    android:src="@drawable/icone_header_busc_saude" />
-
-                <ImageView
-                    android:id="@+id/logo"
-                    android:layout_width="200dp"
-                    android:layout_height="150dp"
-                    android:layout_below="@id/btnBack"
-                    android:layout_alignParentEnd="true"
-                    android:adjustViewBounds="true"
-                    android:contentDescription="Logo"
-                    android:paddingTop="-10dp"
-                    android:scaleType="fitStart"
-                    android:src="@drawable/icone_busca_saude_logo" />
             </RelativeLayout>
 
+            <!-- Caixa com o texto principal -->
+
+            <!-- Botão "Converse agora" -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_box"
                 android:orientation="vertical"
-                android:paddingHorizontal="20dp"
-                android:paddingTop="20dp">
+                android:padding="20dp">
 
-                <!-- Texto "Perto de você" -->
-                <RelativeLayout
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp">
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Converse de forma"
+                        android:textColor="#4CAF50"
+                        android:textSize="33sp"
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_toStartOf="@id/sideIcon"
-                        android:orientation="vertical">
+                        android:orientation="horizontal">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Encontre"
-                            android:textColor="#4CAF50"
-                            android:textSize="33sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="POSTOS DE TESTAGEM"
+                            android:text="segura"
                             android:textColor="#F44336"
                             android:textSize="33sp"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Perto de você!"
+                            android:text=" e "
                             android:textColor="#4CAF50"
+                            android:textSize="33sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="anônima"
+                            android:textColor="#F44336"
                             android:textSize="33sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <ImageView
-                        android:id="@+id/sideIcon"
+                    <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="76dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:contentDescription="Ícone"
-                        android:scaleX="2.3"
-                        android:scaleY="2.3"
-                        android:src="@mipmap/icone_ms_tela_principal_foreground" />
-                </RelativeLayout>
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                <!-- Mapa - Espaçamento reduzido -->
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="400dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="30dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="com a "
+                            android:textColor="#4CAF50"
+                            android:textSize="33sp"
+                            android:textStyle="bold" />
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Taci"
+                            android:textColor="#F44336"
+                            android:textSize="33sp"
+                            android:textStyle="bold" />
 
-                    <fragment
-                        android:id="@+id/map"
-                        android:name="com.google.android.gms.maps.SupportMapFragment"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
-                </FrameLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="."
+                            android:textColor="#4CAF50"
+                            android:textSize="33sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnWhatsapp"
+                style="@style/RedButton.Fixed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Converse agora"
+                android:textAllCaps="false"
+                android:textSize="25sp"
+                app:cornerRadius="20dp"
+                android:textStyle="bold"/>
+
+            <!-- Imagem que ocupa a tela toda lateralmente -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:paddingBottom="40dp"
+                android:contentDescription="Imagem promocional"
+                android:scaleType="fitXY"
+                android:src="@drawable/chatbot_banner" />
+
+            <!-- Mapa -->
 
             <!-- Footer -->
             <LinearLayout

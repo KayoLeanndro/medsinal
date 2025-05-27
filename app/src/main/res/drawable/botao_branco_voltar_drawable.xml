@@ -4,7 +4,7 @@
 
     <item
         android:drawable="@drawable/voltar_branco"
-        android:width="100dp"
-        android:height="100dp"
+        android:width="20dp"
+        android:height="20dp"
         android:gravity="center"/>
 </layer-list>

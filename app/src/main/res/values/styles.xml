@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LibreFranklinRegular">
+        <item name="android:fontFamily">@font/librefranklin_regular</item>
+    </style>
+
+    <style name="MuseoModernoRegular">
+        <item name="android:fontFamily">@font/museomoderno_regular</item>
+    </style>
+</resources>

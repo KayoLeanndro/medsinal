@@ -1,33 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema base -->
     <style name="Base.Theme.MedSinal" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Configurações principais -->
+        <!-- Cores principais -->
         <item name="colorPrimary">@color/button_green_fixed</item>
         <item name="colorOnPrimary">@android:color/white</item>
 
-        <!-- Estilo padrão para todos os botões -->
-        <item name="materialButtonStyle">@style/GreenButton.Fixed</item>
-        <item name="android:buttonStyle">@style/GreenButton.Fixed</item>
-    </style>
-
-    <style name="Theme.MedSinal" parent="Base.Theme.MedSinal">
-        <!-- Mantenha suas configurações atuais de janela -->
+        <!-- Configurações de janela -->
         <item name="android:windowBackground">@color/fundo_app</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Remove a definição padrão de botões -->
+        <item name="materialButtonStyle">@style/ButtonStyle</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
     </style>
 
-    <!-- Estilo fixo para botões -->
-    <style name="GreenButton.Fixed" parent="Widget.Material3.Button">
-        <item name="android:backgroundTint">@color/button_green_fixed</item>
-        <item name="backgroundTint">@color/button_green_fixed</item>
-        <item name="android:textColor">@android:color/white</item>
+    <!-- Estilo base para botões -->
+    <style name="ButtonStyle" parent="Widget.Material3.Button">
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
         <item name="shapeAppearance">@style/ShapeAppearance.MedSinal.SmallComponent</item>
     </style>
 
-    <!-- Forma dos botões -->
+    <!-- Estilo para botões verdes -->
+    <style name="GreenButton.Fixed" parent="ButtonStyle">
+        <item name="android:backgroundTint">@color/button_green_fixed</item>
+        <item name="backgroundTint">@color/button_green_fixed</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Estilo para botões vermelhos -->
+    <style name="RedButton.Fixed" parent="ButtonStyle">
+        <item name="android:backgroundTint">@color/red_button_pressed</item>
+        <item name="backgroundTint">@color/red_button_pressed</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Forma dos componentes -->
     <style name="ShapeAppearance.MedSinal.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">8dp</item>
