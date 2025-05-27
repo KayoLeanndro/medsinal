@@ -172,6 +172,7 @@
             android:backgroundTint="@color/fundo_app"
             android:text="Sobre nós"
             android:textColor="@color/cor_icone"
+            android:fontFamily="@font/museomoderno_regular"
             android:textSize="30sp"
             android:textStyle="bold"
             app:cornerRadius="20dp"

@@ -85,7 +85,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Encontre"
-                            android:textColor="#4CAF50"
+                            android:textColor="@color/cor_icone"
+                            android:fontFamily="@font/museomoderno_regular"
                             android:textSize="33sp"
                             android:textStyle="bold" />
 
@@ -95,14 +96,16 @@
                             android:text="POSTOS DE TESTAGEM"
                             android:textColor="#F44336"
                             android:textSize="33sp"
+                            android:fontFamily="@font/museomoderno_semibolditalic"
                             android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Perto de você!"
-                            android:textColor="#4CAF50"
-                            android:textSize="33sp"
+                            android:textColor="@color/cor_icone"
+                            android:textSize="28sp"
+                            android:fontFamily="@font/museomoderno_regular"
                             android:textStyle="bold" />
                     </LinearLayout>
 
