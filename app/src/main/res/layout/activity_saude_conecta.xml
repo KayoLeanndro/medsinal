@@ -9,10 +9,12 @@
     android:background="@android:color/white"
     tools:context=".BuscaSaudeActivity">
 
+    <!-- ScrollView principal com weight=1 para ocupar todo o espaço disponível -->
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:fillViewport="true"
         android:overScrollMode="never">
 
@@ -24,7 +26,7 @@
             <!-- HEADER -->
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="268dp"
+                android:layout_height="230dp"
                 android:background="@drawable/fundo_de_tela_saude_conectada">
 
                 <ImageButton
@@ -39,11 +41,13 @@
 
                 <ImageView
                     android:id="@+id/logo"
-                    android:layout_width="400dp"
-                    android:layout_height="225dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
                     android:layout_below="@id/btnBack"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="95dp"
+                    android:layout_marginTop="-11dp"
+                    android:layout_marginEnd="167dp"
+                    android:layout_marginBottom="30dp"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"
                     android:src="@drawable/saude_conectada" />
@@ -114,15 +118,12 @@
                 android:id="@+id/buttonGrid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="40dp"
                 android:alignmentMode="alignMargins"
                 android:columnCount="3"
                 android:rowCount="2"
-                android:paddingHorizontal="16dp"
+                android:paddingHorizontal="2dp"
                 android:useDefaultMargins="true">
 
-                <!-- Primeira linha -->
                 <Button
                     android:id="@+id/btn1"
                     android:layout_width="0dp"
@@ -162,7 +163,6 @@
                     android:textStyle="bold"
                     android:text="HERPES" />
 
-                <!-- Segunda linha -->
                 <Button
                     android:id="@+id/btn4"
                     android:layout_width="0dp"
@@ -202,61 +202,61 @@
                     android:textStyle="bold"
                     android:text="HEPATITE B/C" />
             </GridLayout>
-
-            <!-- FOOTER -->
-            <LinearLayout
-                android:id="@+id/footer"
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:background="@drawable/imagem_header_footer"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="60dp"
-                    android:layout_marginBottom="4dp"
-                    android:adjustViewBounds="true"
-                    android:contentDescription="Logo da Empresa"
-                    android:scaleType="fitCenter"
-                    android:scaleX="2.0"
-                    android:scaleY="2.0"
-                    android:src="@mipmap/icone_ms_tela_principal_foreground" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:text="MED.SINAL"
-                        android:textColor="@color/cor_icone"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:text="|"
-                        android:textColor="@color/cor_icone"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="MEDSINAL.PE@GMAIL.COM"
-                        android:textColor="@color/cor_icone"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-            </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
+    <!-- FOOTER (agora posicionado corretamente abaixo do ScrollView) -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/imagem_header_footer"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="4dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="Logo da Empresa"
+            android:scaleType="fitCenter"
+            android:scaleX="2.0"
+            android:scaleY="2.0"
+            android:src="@mipmap/icone_ms_tela_principal_foreground" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="MED.SINAL"
+                android:textColor="@color/cor_icone"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="|"
+                android:textColor="@color/cor_icone"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MEDSINAL.PE@GMAIL.COM"
+                android:textColor="@color/cor_icone"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

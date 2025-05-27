@@ -11,9 +11,9 @@
     </item>
 
     <item
-        android:drawable="@drawable/header_gonorreia"
+        android:drawable="@drawable/gonorreia_header"
         android:width="410dp"
-        android:height="300dp"
+        android:height="270dp"
         android:gravity="center"/>
 
 </layer-list>

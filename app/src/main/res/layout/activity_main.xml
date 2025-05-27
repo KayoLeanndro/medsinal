@@ -173,7 +173,7 @@
             android:text="Sobre nós"
             android:textColor="@color/cor_icone"
             android:fontFamily="@font/museomoderno_regular"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="20dp"
             app:layout_constraintTop_toBottomOf="@id/card_content"
