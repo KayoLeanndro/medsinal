@@ -14,24 +14,38 @@ medSinal/
 │   │   └── AndroidManifest.xml
 │   ├── java/
 │   │   ├── com.example.medsinal/              (Código principal)
+│   │   │   ├── model/                         (Classes de modelo)
+│   │   │   ├── ActivityConorreia.java         (Atividades específicas)
+│   │   │   ├── ActivityHepatite.java
+│   │   │   ├── ActivityHerpes.java
+│   │   │   ├── ActivityHivAids.java
+│   │   │   ├── ActivityHpv.java
+│   │   │   ├── ActivitySifilis.java
+│   │   │   ├── ActivityTaci.java
+│   │   │   ├── BuscaSaudeActivity.java
+│   │   │   ├── MainActivity.java
+│   │   │   └── SaudeConectadaActivity.java
 │   │   ├── com.example.medsinal (androidTest)/ (Testes de Instrumentação)
 │   │   └── com.example.medsinal (test)/       (Testes unitários locais)
+│   ├── assets/                                (Arquivos estáticos como fontes)
 │   ├── res/
 │   │   ├── drawable/                          (Imagens e formas vetoriais)
+│   │   ├── font/                              (Fontes personalizadas)
 │   │   ├── layout/                            (Arquivos XML de layout de UI)
 │   │   ├── menu/                              (Menus da aplicação)
 │   │   ├── mipmap/                            (Ícones do aplicativo)
 │   │   ├── navigation/                        (Gráficos de navegação)
 │   │   ├── values/                            (Strings, estilos, temas etc.)
 │   │   └── xml/                               (Outros recursos em XML)
-├── build.gradle (Project)
-├── build.gradle (Module: app)
-├── proguard-rules.pro
-├── gradle.properties
-├── gradle-wrapper.properties
-├── libs.versions.toml
-├── local.properties
-└── settings.gradle
+├── Gradle Scripts/
+│   ├── build.gradle (Project: medSinal)
+│   ├── build.gradle (Module :app)
+│   ├── proguard-rules.pro
+│   ├── gradle.properties
+│   ├── gradle-wrapper.properties
+│   ├── libs.versions.toml
+│   ├── local.properties
+│   └── settings.gradle
 ```
 
 ---
@@ -56,6 +70,21 @@ Contém os recursos visuais e auxiliares do app:
 - `values/`: Strings, temas, cores, dimensões e estilos.
 - `xml/`: Arquivos de configuração extra (por exemplo, preferências).
 
+
+## 🧩 Componentes Principais
+
+### Atividades
+- `MainActivity`: Tela inicial
+- `BuscaSaudeActivity`: Busca por serviços de saúde
+- `SaudeConectadaActivity`: Integração com serviços
+- Atividades específicas para condições médicas:
+  - Hepatite, HIV/AIDS, HPV, Sífilis, etc.
+
+### Recursos
+- **Layouts**: XML em `res/layout/`
+- **Ícones**: `res/mipmap/`
+- **Navegação**: `res/navigation/`
+- **Strings/Estilos**: `res/values/`
 ---
 
 ## ⚙️ Arquivos de Configuração
