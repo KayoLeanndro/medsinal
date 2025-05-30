@@ -37,8 +37,6 @@
                     android:src="@drawable/voltar_branco" />
             </RelativeLayout>
 
-            <!-- Caixa com o texto principal -->
-
             <!-- Botão "Converse agora" -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -152,8 +150,6 @@
                 android:contentDescription="Imagem promocional"
                 android:scaleType="fitXY"
                 android:src="@drawable/chatbot_banner" />
-
-            <!-- Mapa -->
 
             <!-- Footer -->
             <LinearLayout

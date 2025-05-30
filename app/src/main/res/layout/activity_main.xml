@@ -41,7 +41,6 @@
                 android:contentDescription="Logo do App"/>
         </RelativeLayout>
 
-        <!-- CARD PRINCIPAL COM BOTÕES - Margem inferior aumentada -->
         <androidx.cardview.widget.CardView
             android:id="@+id/card_content"
             android:layout_width="0dp"
@@ -163,7 +162,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- BOTÃO QUEM SOMOS - Margem superior aumentada -->
+        <!-- BOTÃO QUEM SOMOS -->
         <Button
             android:id="@+id/btn_quem_somos"
             android:layout_width="300dp"
@@ -182,7 +181,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@id/card_quem_somos" />
 
-        <!-- CARD "QUEM SOMOS" - Margens adicionadas -->
+        <!-- CARD "QUEM SOMOS" -->
         <androidx.cardview.widget.CardView
             android:id="@+id/card_quem_somos"
             android:layout_width="0dp"

@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class ActivityTaci extends AppCompatActivity  {
 
 
-    private static final String WHATSAPP_URL = "https://wa.me/+5581986228400";
+    private static final String WHATSAPP_URL = "https://wa.me/+558193923162";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

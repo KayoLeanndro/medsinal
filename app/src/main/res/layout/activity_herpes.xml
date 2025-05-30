@@ -144,7 +144,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- FOOTER FIXO NA PARTE INFERIOR -->
     <LinearLayout
         android:id="@+id/footer"
         android:layout_width="match_parent"

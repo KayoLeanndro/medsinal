@@ -132,22 +132,6 @@
                     android:textColor="@color/black"
                     android:layout_marginBottom="16dp" />
             </LinearLayout>
-
-            <!-- GRID DE BOTÕES -->
-            <GridLayout
-                android:id="@+id/buttonGrid"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:layout_marginBottom="40dp"
-                android:alignmentMode="alignMargins"
-                android:columnCount="3"
-                android:rowCount="2"
-                android:paddingHorizontal="16dp"
-                android:useDefaultMargins="true">
-
-                <!-- Adicione os botões aqui -->
-            </GridLayout>
         </LinearLayout>
     </ScrollView>
 
